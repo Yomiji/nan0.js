@@ -58,6 +58,7 @@ class Nan0Idents {
     return this.idents[key];
   }
 }
+
 type Closer = (code?: number, reason?: string) => void
 
 type Nan0Message = {
@@ -121,5 +122,5 @@ async function Nan0Websocket(url: string, idents: Nan0Idents, onMessage: (msg: M
 }
 
 
-export { Nan0Idents, Nan0Websocket, SetPreamble };
+export {Nan0Idents, Nan0Websocket, SetPreamble};
 

@@ -1,6 +1,7 @@
-import * as nan0  from '../src/nan0';
-import { Service } from '../src/service_pb'
+import * as nan0 from '../src/nan0';
+import {Service} from '../src/service_pb'
 import * as assert from 'assert'
+
 function main(): void {
   const idents: nan0.Nan0Idents = new nan0.Nan0Idents();
   const service: Service = new Service();
@@ -14,7 +15,9 @@ function main(): void {
       data: service,
       typeName: 'nan0.Service'
     });
-  }).catch((reason)=> {console.log(`Client not ready: ${reason}`)});
+  }).catch((reason) => {
+    console.log(`Client not ready: ${reason}`)
+  });
 }
 
 main();
