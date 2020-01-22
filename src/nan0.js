@@ -36,8 +36,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 exports.__esModule = true;
+var fnv = require("fnv-plus");
 var WebSocket = require('ws');
-var fnv = require('fnv-plus');
 var preamble = new Uint8Array([0x01, 0x02, 0x03, 0xFF, 0x03, 0x02, 0x01]);
 function SetPreamble(p) {
     preamble = p;

@@ -1,7 +1,7 @@
 import {Message} from 'google-protobuf';
+import * as fnv from 'fnv-plus';
 
 const WebSocket = require('ws');
-const fnv = require('fnv-plus');
 
 let preamble = new Uint8Array([0x01, 0x02, 0x03, 0xFF, 0x03, 0x02, 0x01]);
 

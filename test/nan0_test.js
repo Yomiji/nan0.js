@@ -16,6 +16,8 @@ function main() {
             data: service,
             typeName: 'nan0.Service'
         });
-    })["catch"](function (reason) { console.log("Client not ready: " + reason); });
+    })["catch"](function (reason) {
+        console.log("Client not ready: " + reason);
+    });
 }
 main();
